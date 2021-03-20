@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <p onmouseover="priNajeti()"
+     onmouseout="priOdjeti()"
+     >
+    V elipse spí lev.
+  </p>
+  <button onclick="zmenBarvuNaCervenu()">
+          Červený po kliknutí
+  </button>
+  <button onclick="zvetsi()">Větší po kliknutí</button>
+
+  <audio id="js-audio" src="audio/dingdingdang.mp3" preload="auto"></audio>
+
+<h1>Audio ovládač</h1>
+<button onclick="prehraj('#js-audio')">Prehraj</button>
+<button onclick="stopni('#js-audio')"> Pauzni</button>
+<button onclick="ztisit('#js-audio')">Ztišit</button>
+<button onclick="hlasitostAkorat('#js-audio')">Hlasitost tak akorát</button>
+<button onclick="hlasitostMaximum('#js-audio')">Hlasitost na maximum</button>
+<button onclick="nastavZacatek('#js-audio')">Nastav na začátek</button>
+  
+ <script src="main.js"></script>
+</body>
+</html>
